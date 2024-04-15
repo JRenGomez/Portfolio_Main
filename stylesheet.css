@@ -15,7 +15,7 @@
     grid-template-areas: 
     "two two three"
       "two two three"
-      "one one three"
+      " two two three"
   }
   
   @media (min-width: 481px) and (max-width: 767px){
@@ -23,7 +23,7 @@
           grid-template-columns: 1fr;
           grid-template-rows: 1fr 1fr 1fr;
           grid-template-areas:
-          "one"
+         
           "two"
           "three"
         }
@@ -51,8 +51,7 @@
   }
   
   .one {
-    grid-area: one;
-    background-color: yellow
+  
   }
   
   .two {
