@@ -57,10 +57,13 @@
   
   .two {
     grid-area: two;
-    background-color: orange
+    background-color: orange;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   
   .three {
     grid-area: three;
     background-color: red
   }
+  
