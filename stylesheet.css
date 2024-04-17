@@ -1,22 +1,32 @@
 .grid {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 8fr 1fr;
-    grid-template-areas:
-      "title title"
+  display: grid;
+  grid-template-columns: 1fr 3fr; /* Adjust the ratio between sidebar and content width as needed */
+  grid-template-rows: auto;
+  grid-template-areas:
       "sidebar content"
       "footer footer";
-  }
+}
+.container{
+
+background-image: url("https://images5.alphacoders.com/310/310426.jpg");}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: grey;
+}
+
+.content {
+  grid-area: content;
+  border: 2px solid black;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: green;
+}
+
   
-  .nest {
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "two two three"
-      "two two three"
-      " two two three"
-  }
+  
   
   @media (min-width: 481px) and (max-width: 767px){
      .nest{
@@ -50,9 +60,7 @@
     background-color: green
   }
   
-  .one {
   
-  }
   
   .two {
     grid-area: two;
