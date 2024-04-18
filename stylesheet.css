@@ -1,19 +1,33 @@
 .grid {
   display: grid;
-  grid-template-columns: 1fr 3fr; /* Adjust the ratio between sidebar and content width as needed */
+  grid-template-columns: .5fr 3.5fr; /* Adjust the ratio between sidebar and content width as needed */
   grid-template-rows: auto;
   grid-template-areas:
       "sidebar content"
       "footer footer";
 }
-.container{
-
-background-image: url("https://images5.alphacoders.com/310/310426.jpg");}
-
+.lead.text {
+  color: white; /* Bright white */
+  font-weight: bold; /* Increase font weight to make text bolder */
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6); /* Adding text shadow for better readability */
+}
 .sidebar {
   grid-area: sidebar;
   background-color: grey;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
 }
+.container{
+
+background-image: url("https://images5.alphacoders.com/310/310426.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+
 
 .content {
   grid-area: content;
